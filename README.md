@@ -3,7 +3,7 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW
 ## REQUIRED STEPS BEFORE USING
 - Requires at least a 100 GB partition (Made in windows)
 - Secureboot is disabled
-- Download the latest winesapos-${WINESAPOS_VERSION}-minimal-rootfs.tar.zst [release](https://github.com/LukeShortCloud/winesapOS/releases)
+- Download the latest `winesapos-${WINESAPOS_VERSION}-minimal-rootfs.tar.zst` [release](https://github.com/LukeShortCloud/winesapOS/releases)
 
 ## NEXT STEPS
 - Boot into a WinesapOS version 4.10 flash drive and select the `nobara` kernel
@@ -18,37 +18,40 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW
 sudo crudini --ini-options=nospace --set /etc/default/grub "" GRUB_DISABLE_OS_PROBER false
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
-  
-# Code for drive types
 
-## CODE (NVME drives)
-```
-#!/bin/bash
-sudo mount -t btrfs -o subvol=/,compress-force=zstd:1,discard,noatime,nodiratime -L winesapos-root0 /
-sudo btrfs subvolume create /mnt/.snapshots
-sudo btrfs subvolume create /mnt/home
-sudo mount -t btrfs -o subvol=/home,compress-force=zstd:1,discard,noatime,nodiratime -L winesapos-root0 /mnt/home
-sudo btrfs subvolume create /mnt/home/.snapshots
-sudo btrfs subvolume create /mnt/swap
-sudo mount -t btrfs -o subvol=/swap,compress-force=zstd:1,discard,noatime,nodiratime -L winesapos-root0 /mnt/swap
-sudo mkdir /mnt/boot
-sudo mount --label winesapos-boot0 /mnt/boot
-sudo mkdir /mnt/boot/efi
-sudo mount /dev/nvme01p1 /mnt/boot/efi
-```
+ # Supported Devices
+ ## LENOVO
+ - Support for WinesapOS ✔️
+ - Support for this Script ✔️
+ - SSD ✔️
+ - NVME :x:
 
-## CODE (SSD)
-```
-#!/bin/bash
-sudo mount -t btrfs -o subvol=/,compress-force=zstd:1,discard,noatime,nodiratime -L winesapos-root0 /
-sudo btrfs subvolume create /mnt/.snapshots
-sudo btrfs subvolume create /mnt/home
-sudo mount -t btrfs -o subvol=/home,compress-force=zstd:1,discard,noatime,nodiratime -L winesapos-root0 /mnt/home
-sudo btrfs subvolume create /mnt/home/.snapshots
-sudo btrfs subvolume create /mnt/swap
-sudo mount -t btrfs -o subvol=/swap,compress-force=zstd:1,discard,noatime,nodiratime -L winesapos-root0 /mnt/swap
-sudo mkdir /mnt/boot
-sudo mount --label winesapos-boot0 /mnt/boot
-sudo mkdir /mnt/boot/efi
-sudo mount /dev/sda1 /mnt/boot/efi
-```
+## DELL
+ - Support for WinesapOS ✔️
+ - Support for this Script ✔️
+ - SSD ✔️
+ - NVME :x:
+
+## ASUS
+ - Support for WinesapOS ✔️
+ - Support for this Script ✔️
+ - SSD ✔️
+ - NVME ✔️
+
+## SteamDeck
+ - Support for WinesapOS ✔️
+ - Support for this Script ✔️
+ - SSD :x:
+ - NVME ✔️
+
+## HP
+  - Support for WinesapOS ✔️
+ - Support for this Script ✔️
+ - SSD ✔️
+ - NVME :x:
+
+# Macbooks
+ - Support for WinesapOS ✔️ (T1 AND INTEL ONLY)
+ - Support for this Script :x:
+ - SSD ✔️
+ - NVME :x:
