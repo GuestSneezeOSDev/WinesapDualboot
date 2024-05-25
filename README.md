@@ -9,8 +9,9 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW
 - Boot into a WinesapOS version 4.10 flash drive and select the `nobara` kernel
 - open terminal and type `sudo pacman -S bash` then
 - type in `lsblk` in the terminal to make sure you found the correct drive (edit the code to the drive you want)
-- make a new sh file called `winesapdualboot.sh` with the following code here
-- after you made the sh file type in `sudo ./path/to/winesapdualboot.sh`
+- download the script from this github site
+- change the file to the new partiton you want it in from the `lsblk` list
+- after that type this in the terminal `sudo ./path/to/winesapdualboot.sh`
 - reboot the computer and remove the usb you used for the installer
 - once booted into winesapos type this to add windows to the boot menu :
 ```
