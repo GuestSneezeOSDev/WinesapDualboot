@@ -50,8 +50,21 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
  - SSD ✔️
  - NVME :x:
 
-# Macbooks
+## Macbooks
  - Support for WinesapOS ✔️ (T1 AND INTEL ONLY)
  - Support for this Script :x:
  - SSD ✔️
  - NVME :x:
+
+## ACER
+  - Support for WinesapOS ✔️
+ - Support for this Script ✔️
+ - SSD ✔️
+ - NVME :x:
+
+## CHROME DEVICES
+  - Support for WinesapOS ✔️
+ - Support for this Script ✔️
+ - SSD ✔️
+ - NVME :x:
+ - Requires new 240 GB drive
