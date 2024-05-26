@@ -7,6 +7,10 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW AND IS NOT 
 
 ## NEXT STEPS
 - Boot into a WinesapOS version 4.10 flash drive and select the `nobara` kernel
+- Open GParted then right-click on the "unallocated" space > New > New size (MiB): 1000, File system: ext4, Label: winesapos-boot0 > Add
+(Right-click on the "unallocated" space) > New > File system: btrfs, Label: winesapos-root0 > Add
+(Select the green check mark to "Apply All Operations") > Apply > Close
+- (an easier way will be added after we see that testing will work)
 - open terminal and type `sudo pacman -S bash` then
 - type in `lsblk` in the terminal to make sure you found the correct drive (edit the code to the drive you want)
 - download the script from this github site
