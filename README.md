@@ -1,5 +1,5 @@
 # WinesapDualboot
-I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW
+I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW AND IS NOT OFFICIAL
 ## REQUIRED STEPS BEFORE USING
 - Requires at least a 100 GB partition (Made in windows)
 - Secureboot is disabled
@@ -19,53 +19,7 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW
 sudo crudini --ini-options=nospace --set /etc/default/grub "" GRUB_DISABLE_OS_PROBER false
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
+WinesapDualboot also works on :
 
- # Supported Devices
- ## LENOVO
- - Support for WinesapOS ✔️
- - Support for this Script ✔️
- - SSD ✔️
- - NVME :x:
-
-## DELL
- - Support for WinesapOS ✔️
- - Support for this Script ✔️
- - SSD ✔️
- - NVME :x:
-
-## ASUS
- - Support for WinesapOS ✔️
- - Support for this Script ✔️
- - SSD ✔️
- - NVME ✔️
-
-## SteamDeck
- - Support for WinesapOS ✔️
- - Support for this Script ✔️
- - SSD :x:
- - NVME ✔️
-
-## HP
-  - Support for WinesapOS ✔️
- - Support for this Script ✔️
- - SSD ✔️
- - NVME :x:
-
-## Macbooks
- - Support for WinesapOS ✔️ (T1 AND INTEL ONLY)
- - Support for this Script :x:
- - SSD ✔️
- - NVME :x:
-
-## ACER
-  - Support for WinesapOS ✔️
- - Support for this Script ✔️
- - SSD ✔️
- - NVME :x:
-
-## CHROME DEVICES
-  - Support for WinesapOS ✔️
- - Support for this Script ✔️
- - SSD ✔️
- - NVME :x:
- - Requires new 240 GB drive
+- WinesapOS
+- GuestSneezeOS
