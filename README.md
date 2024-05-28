@@ -27,3 +27,10 @@ WinesapDualboot also works on :
 
 - WinesapOS
 - GuestSneezeOS
+
+## what would i do if GUI broke
+here is another way to do it in a cli environment
+- `git clone https://github.com/GuestSneezeOSDev/WinesapDualboot`
+- `cd WinesapDualboot`
+- `sudo chmod +x winesapdualbootssd.sh` (if your nvme change it to `winesapdualbootnvme.sh`)
+- `sudo ./winesapdualbootssd.sh` (if your on nvme run `sudo ./winesapdualbootnvme.sh`)
