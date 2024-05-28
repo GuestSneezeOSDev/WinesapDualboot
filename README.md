@@ -17,12 +17,7 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW AND IS NOT 
 - change the file to the new partiton you want it in from the `lsblk` list
 - after that type this in the terminal `sudo ./path/to/winesapdualboot.sh`
 - reboot the computer and remove the usb you used for the installer
-- once booted into winesapos type this to add windows to the boot menu :
-```
-# Enable os-prober. It is disabled by default.
-sudo crudini --ini-options=nospace --set /etc/default/grub "" GRUB_DISABLE_OS_PROBER false
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-```
+- once booted into winesapos type this to add windows to the you can run the `afterinstall.sh` file
 WinesapDualboot also works on :
 
 - WinesapOS
@@ -34,3 +29,4 @@ here is another way to do it in a cli environment
 - `cd WinesapDualboot`
 - `sudo chmod +x winesapdualbootssd.sh` (if your nvme change it to `winesapdualbootnvme.sh`)
 - `sudo ./winesapdualbootssd.sh` (if your on nvme run `sudo ./winesapdualbootnvme.sh`)
+- then after install remove the usb reboot and do it all agian but instead of running the `winesapdualboot` scripts run the `afterinstall.sh` script
