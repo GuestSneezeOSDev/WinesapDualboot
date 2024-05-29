@@ -4,6 +4,7 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW AND IS NOT 
 - Requires at least a 100 GB partition (Made in windows)
 - Secureboot is disabled
 - Download the latest `winesapos-${WINESAPOS_VERSION}-minimal-rootfs.tar.zst` [release](https://github.com/LukeShortCloud/winesapOS/releases)
+- IT REQUIRES THE LATEST BETA OR STABLE VERSION UPGRADE : `curl https://raw.githubusercontent.com/LukeShortCloud/winesapOS/stable/scripts/winesapos-upgrade.sh | sudo -E bash`
 
 ## NEXT STEPS
 - Boot into a WinesapOS version 4.10 flash drive and select the `nobara` kernel
