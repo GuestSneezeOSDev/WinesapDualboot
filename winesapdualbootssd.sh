@@ -9,7 +9,7 @@ sudo mount -t btrfs -o subvol=/swap,compress-force=zstd:1,discard,noatime,nodira
 sudo mkdir /mnt/boot
 sudo mount --label winesapos-boot0 /mnt/boot
 sudo mkdir /mnt/boot/efi
-sudo mount /dev/sda1 /mnt/boot/efi
+sudo mount /dev/sdb /mnt/boot/efi
 
 # This part downloads tars
 sudo tar --extract --keep-old-files --verbose --file /run/media/winesap/wos-drive/winesapos-${WINESAPOS_VERSION}-minimal-rootfs.tar.zst --directory /mnt/
