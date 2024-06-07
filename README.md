@@ -5,7 +5,7 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW AND IS NOT 
 - Secureboot is disabled
 - Download the latest `winesapos-${WINESAPOS_VERSION}-minimal-rootfs.tar.zst` [release](https://github.com/LukeShortCloud/winesapOS/releases)
 - IT REQUIRES THE LATEST BETA OR STABLE VERSION UPGRADE : `curl https://raw.githubusercontent.com/LukeShortCloud/winesapOS/stable/scripts/winesapos-upgrade.sh | sudo -E bash`
-
+- IMG for WinesapOS 4.10 [download](https://winesapos.lukeshort.cloud/repo/iso/winesapos-4.1.0/_test/)
 ## NEXT STEPS
 - Boot into a WinesapOS version 4.10 flash drive and select the `nobara` kernel
 - Open GParted then right-click on the "unallocated" space > New > New size (MiB): 1000, File system: ext4, Label: winesapos-boot0 > Add
