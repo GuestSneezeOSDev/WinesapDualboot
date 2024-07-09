@@ -1,3 +1,4 @@
+## I have stopped development this script is still working i will archive and transfer the project to @LukeShortCloud
 # WinesapDualboot
 I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW AND IS NOT OFFICIAL
 ## REQUIRED STEPS BEFORE USING
