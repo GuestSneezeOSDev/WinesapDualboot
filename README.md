@@ -21,3 +21,6 @@ I AM NOT RESPONSIBLE IF I BREAK YOUR DEVICE THIS SCRIPT IS STILL NEW AND IS NOT 
 - reboot the computer and remove the usb you used for the installer
 - once booted into winesapos type this to add windows to the you can run the `afterinstall.sh` file
 - (KDIALOG/GUI version coming soon)
+
+Code By GuestSneezeOSDev
+Advanced Code By LukeShortCloud
